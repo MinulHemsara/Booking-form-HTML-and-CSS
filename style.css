@@ -1,0 +1,129 @@
+ html {
+    font-size: 63%; }
+  
+  body {
+    box-sizing: border-box; }
+  
+  body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    /*font-size: 16px;*/
+    line-height: 1.7;
+    color: #777;
+    padding: 3rem; 
+}
+  
+.heading {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: italic;
+    display: inline-block;
+    background-image: linear-gradient(to right, #aa6857, #9e8e44);
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: .2rem;
+    transition: all .2s; }
+    
+    .heading:hover {
+      transform: skewY(2deg) skewX(15deg) scale(1.1);
+      text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+
+
+.bottom {
+    margin-bottom: 4rem;
+ }
+   
+  
+.form__group:not(:last-child) {
+    margin-bottom: 2rem; 
+}
+  
+  .form__input {
+    font-size: 1.5rem;
+    font-family: inherit;
+    color: inherit;
+    padding: 1.5rem 2rem;
+    border-radius: 62px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    border-bottom: 3px solid transparent;
+    width: 70%;
+    display: block; 
+}
+
+    .form__input:focus {
+      outline: none;
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+      border-bottom: 3px solid #55c57a; }
+    .form__input:focus:invalid {
+      border-bottom: 3px solid #ff7730; }
+    .form__input::-webkit-input-placeholder {
+      color: #999; 
+    }
+  
+  .form__label {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-left: 2rem;
+    margin-top: .7rem;
+    display: block;
+    transition: all .3s; 
+}
+  
+  .form__input:placeholder-shown + .form__label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4rem);
+ }
+    
+  .section-book {
+    padding: 15rem 0;
+    background-image: linear-gradient(to right bottom, #aa6857, #9e8e44); 
+}
+  
+  .book {
+    background-image: linear-gradient(105deg, 
+    rgba(255, 255, 255, 0.9) 0%, 
+    rgba(255, 255, 255, 0.9) 50%, transparent 50%), 
+    url(../booking/my.jpg);
+    background-size: 100%;
+    border-radius: 3px;
+    height: 50rem;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2); 
+    }
+    
+    .book__form {
+      width: 50%;
+      padding: 6rem; 
+    }
+
+    .btn, 
+    .btn:link, 
+    .btn:visited {
+      text-transform: uppercase;
+      text-decoration: none;
+      font-family: Times New Roman;
+      padding: 1.5rem 4rem;
+      display: inline-block;
+      border-radius: 10rem;
+      transition: all .2s;
+      position: relative;
+      font-size: 1.6rem;
+      border: none;
+      cursor: pointer; 
+    }
+
+
+    .btn--login{
+      font-weight: bold;
+      background-color: #9e8e44;
+      color: #fff;
+      
+    }
+    .btn--login::after {
+      background-color: #55c57a; }
+    
+  
